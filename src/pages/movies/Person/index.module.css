@@ -1,0 +1,41 @@
+
+.flex {
+  display: flex;
+  gap: 30px;
+  line-height: 25px;
+  padding-bottom: 40px;
+}
+.imgDiv {
+  width: 400px;
+  border-radius: 10px;
+  background-color: blue;
+}
+.imgDiv img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 5px 3px 10px 0.2px gray;
+  object-fit: cover;
+}
+.rightText {
+  width: 100%;
+}
+.rightText h1 {
+  padding-bottom: 30px;
+}
+.rightText h2 {
+  padding: 16px 0;
+}
+.spDiv{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  overflow-x: scroll;
+}
+.spDiv .spCard{
+  min-width: 300px;
+}
+.spDiv img{
+width: 100%;
+
+}

@@ -1,0 +1,41 @@
+header {
+  height: 50px;
+  background-color: blue;
+}
+.header {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.flex p:hover {
+  color: black;
+}
+.home a {
+  text-decoration: none;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown .dropdownElements {
+  display: none;
+  position: absolute;
+  background-color: aqua;
+  padding: 12px 20px;
+}
+.dropdown .dropdownElements a {
+  text-decoration: none;
+}
+.dropdown:hover .dropdownElements {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 10;
+}

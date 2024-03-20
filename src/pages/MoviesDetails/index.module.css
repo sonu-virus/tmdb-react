@@ -1,0 +1,69 @@
+.mainDiv {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.upperIDiv {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+.upperIDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.posterSec {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #ffe29fd5,25%, #dfd0aed0 75%);
+  color: white;
+}
+.posterContentContainer {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  height: 100%;
+  padding: 20px 32px;
+}
+.posterContentContainer img {
+  width: 25%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.posterContentContainer div {
+  width: 70%;
+  color: black;
+
+}
+.castDiv{
+  width: 100%;
+  gap: 12px;
+  padding: 12px;
+}
+.castDiv div{
+  display: flex;
+  overflow-x: scroll;
+  gap: 12px;
+
+}
+.castDiv div img{
+  min-width: 200px;
+  height: 280px;
+  object-fit: contain;
+}
+.castP{ 
+  background-color: gray;
+padding:  12px 12px 0 12px;
+line-height: 25px;
+    box-shadow: 5px 10px 10px 1.1 gray;
+    align-items: center;
+}
+.castP:hover{
+  
+    transform: scale(1.03);
+    background-color: gray;
+    opacity: 0.5;
+  
+}
