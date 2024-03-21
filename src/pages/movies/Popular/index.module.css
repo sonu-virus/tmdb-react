@@ -2,17 +2,9 @@
   display: flex;
   overflow: hidden;
   overflow-x: scroll;
-  scrollbar-color: transparent transparent;
-}
-/* Hide scrollbar for Chrome, Safari and Opera */
-.card::-webkit-scrollbar {
-  display: none;
+  /* scrollbar-color: transparent transparent; */
 }
 
-/* Hide scrollbar for IE and Edge */
-.card {
-  -ms-overflow-style: none;
-}
 
 .imgDiv {
   width: 300px;

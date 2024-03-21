@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import style from "./index.module.css";
+import { useNavigate } from "react-router-dom";
 function Popular() {
   const [movie, setMovie] = useState([]);
+  const navigate = useNavigate();
 
   function getMovies() {
     const options = {
@@ -33,7 +35,10 @@ function Popular() {
       <div className={style.card}>
         {movie.map((movie) => (
           <div>
-            <div className={style.imgDiv}>
+            <div
+              className={style.imgDiv}
+              onClick={() => navigate(`/movie/${movie.id}`)}
+            >
               <img
                 src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
                 alt="movie.title"

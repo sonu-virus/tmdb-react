@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import style from "./index.module.css";
+import { useNavigate } from "react-router-dom";
 
 function TopRated() {
   const [topMovie, setTopMovie] = useState([]);
+  const navigate = useNavigate();
 
   function getTopRMovie() {
     const options = {
@@ -32,7 +34,10 @@ function TopRated() {
     <div className="mainContener">
       <div className={style.card}>
         {topMovie.map((topMovie) => (
-          <div className={style.imgDiv}>
+          <div
+            className={style.imgDiv}
+            onClick={() => navigate(`/movie/${topMovie.id}`)}
+          >
             <img
               src={`https://image.tmdb.org/t/p/original${topMovie.backdrop_path}`}
               alt="upMov.title"

@@ -1,13 +1,12 @@
 .card {
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
    gap: 20px;
-   padding: 12px;
-   overflow-x: scroll;
-  scrollbar-color: transparent transparent;
+   padding: 20px;
+
 
  }
  .card .imgDiv {
-   min-width: 350px;
    position: relative;
  }
  .card .hide{
@@ -32,11 +31,11 @@
 @keyframes rotation {
 
   100% {
-    transform:scale();
+    transform:scale(1);
   }
 
   50% {
-    transform: scale(0.1);
+    transform: scale(0.5);
   }
   0% {
     transform: scale(1);
@@ -48,7 +47,7 @@
    height: 400px;
    border-radius: 20px;
    object-fit: cover;
-   box-shadow: 5px 5px 5px 0.6px rgb(51, 183, 201);
+   box-shadow: 5px 5px 5px 0.6px rgb(161, 167, 168);
  
  }
  .card h3 {

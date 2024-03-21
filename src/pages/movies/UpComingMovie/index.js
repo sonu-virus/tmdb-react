@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import style from "./index.module.css";
+import { useNavigate } from "react-router-dom";
 
 function UpComingMovie() {
   const [uPMovies, setUpMovies] = useState([]);
+  const navigate = useNavigate();
 
   function getUpComingMovie() {
     const options = {
@@ -31,13 +33,11 @@ function UpComingMovie() {
     <div className="mainContainer">
       <div className={style.card}>
         {uPMovies.map((upMov) => (
-          <div>
-            <div>
-              <img
-                src={`https://image.tmdb.org/t/p/original${upMov.backdrop_path}`}
-                alt="upMov.title"
-              />
-            </div>
+          <div onClick={() => navigate(`/movie/${upMov.id}`)}>
+            <img
+              src={`https://image.tmdb.org/t/p/original${upMov.backdrop_path}`}
+              alt="upMov.title"
+            />
 
             <h3>{upMov.title}</h3>
           </div>

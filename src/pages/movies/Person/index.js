@@ -5,7 +5,6 @@ import style from "./index.module.css";
 function Person() {
   const params = useParams();
   const navigate = useNavigate();
-
   const [pDetails, setPDetails] = useState([]);
   const [pSDetails, setPSDetails] = useState([]);
 
